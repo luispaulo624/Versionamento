@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore os projetos sociais da ONG Conectar & Transformar.">
+    <title>Projetos | ONG Conectar & Transformar</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header class="main-header">
+    <div class="container d-flex justify-content-between align-items-center">
+        
+        <a href="index.html" class="logo-link">
+            <h1>ONG Conectar & Transformar</h1>
+        </a>
+        
+        <button id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        
+        <nav class="main-nav" role="navigation">
+            <ul id="main-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link" role="menuitem">Início</a></li>
+                <li role="none"><a href="sobre.html" class="nav-link" role="menuitem">Sobre Nós</a></li>
+                
+                <li class="nav-item-dropdown" role="none">
+                    <a href="projetos.html" class="nav-link" role="menuitem" aria-haspopup="true">
+                        Projetos ▾
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="none"><a href="projetos.html#lista-projetos" role="menuitem">Todos os Projetos</a></li>
+                        <li role="none"><a href="projetos.html#galeria-fotos" role="menuitem">Galeria de Fotos</a></li>
+                        <li role="none"><a href="#" role="menuitem">Projeto Educação</a></li>
+                        <li role="none"><a href="#" role="menuitem">Projeto Saúde</a></li>
+                    </ul>
+                </li>
+                <li role="none"><a href="voluntariado.html" class="nav-link" role="menuitem">Seja Voluntário</a></li>
+                <li role="none"><a href="doacoes.html" class="nav-link" role="menuitem">Doe</a></li>
+                <li role="none"><a href="transparencia.html" class="nav-link" role="menuitem">Transparência</a></li>
+                <li role="none"><a href="contato.html" class="nav-link" role="menuitem">Contato</a></li>
+                <li role="none"><a href="blog.html" class="nav-link" role="menuitem">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <main>
+        <div class="container">
+            <section id="lista-projetos">
+                <h1>Nossos Projetos</h1>
+                <p>Cada projeto é uma semente de esperança. Conheça as áreas em que atuamos.</p>
+                
+            </section>
+            <section id="galeria-fotos" aria-labelledby="galeria-heading">
+    <h2 id="galeria-heading">Nossos Projetos em Ação</h2>
+    
+    <div class="row">
+        
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="assets/images/projeto1.webp" class="card-img-top" alt="Descrição da imagem 1" loading="lazy">
+                <div class="card-body">
+                    <h3 class="card-title">Projeto Educação</h3>
+                    <span class="badge badge-primary">Educação</span>
+                    <p class="card-text">Aulas de reforço e atividades lúdicas para crianças da comunidade.</p>
+                    <a href="#" class="btn btn-secondary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="assets/images/projeto2.webp" class="card-img-top" alt="Descrição da imagem 2" loading="lazy">
+                <div class="card-body">
+                    <h3 class="card-title">Projeto Saúde</h3>
+                    <span class="badge badge-secondary">Saúde</span>
+                    <p class="card-text">Atendimento médico e odontológico gratuito para famílias carentes.</p>
+                    <a href="#" class="btn btn-secondary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="assets/images/projeto3.webp" class="card-img-top" alt="Descrição da imagem 3" loading="lazy">
+                <div class="card-body">
+                    <h3 class="card-title">Campanha do Agasalho</h3>
+                    <span class="badge badge-danger">Comunidade</span>
+                    <p class="card-text">Arrecadação e distribuição de roupas de inverno e cobertores.</p>
+                    <a href="#" class="btn btn-secondary">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+</section>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 ONG Conectar & Transformar. Todos os direitos reservados.</p>
+             <div class="footer-links">
+                <a href="login.html">Acesso do Administrador</a>
+            </div>
+            <form class="newsletter-form">
+                <label for="newsletter-email">Assine nossa newsletter:</label>
+                <input type="email" id="newsletter-email" name="newsletter_email" placeholder="Seu melhor e-mail" required>
+                <button type="submit">Inscrever</button>
+            </form>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
