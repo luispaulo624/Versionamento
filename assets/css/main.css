@@ -1,0 +1,9 @@
+/*
+ * O ficheiro main.css serve como o ponto de entrada principal.
+ * Ele importa todos os "parciais" (partials) na ordem correta.
+*/
+
+@import url('_base.css');
+@import url('_layout.css');
+@import url('_navigation.css');
+@import url('_components.css');

@@ -1,0 +1,95 @@
+/* --- ARQUIVO BASE: DESIGN SYSTEM --- */
+
+/* 1. SISTEMA DE CORES (8+ CORES) */
+:root {
+    /* Cores Primárias e Secundárias */
+    --color-primary: #0059b3;       /* Azul principal (contraste AA) */
+    --color-primary-dark: #004285;  /* Azul mais escuro (para hovers) */
+    --color-secondary: #1abc9c;      /* Verde/Turquesa (para destaques, botões) */
+    
+    /* Cores de Feedback e Status */
+    --color-success: #28a745;       /* Verde (sucesso, notificação) */
+    --color-warning: #ffc107;       /* Amarelo (avisos) */
+    --color-danger: #dc3545;        /* Vermelho (erros, exclusão) */
+
+    /* Neutros (Paleta de Cinzas) */
+    --color-neutral-0: #FFFFFF;     /* Branco */
+    --color-neutral-100: #f8f9fa; /* Cinza claro (fundo de secções) */
+    --color-neutral-300: #e9ecef; /* Cinza (bordas) */
+    --color-neutral-700: #495057; /* Cinza escuro (texto secundário) */
+    --color-neutral-900: #212529; /* Preto suave (texto principal) */
+}
+
+/* 2. SISTEMA DE ESPAÇAMENTO (Modular 8px) */
+:root {
+    --space-1: 0.5rem;  /* 8px */
+    --space-2: 1rem;    /* 16px */
+    --space-3: 1.5rem;  /* 24px */
+    --space-4: 2rem;    /* 32px */
+    --space-6: 3rem;    /* 48px */
+    --space-8: 4rem;    /* 64px */
+}
+
+/* 3. SISTEMA DE TIPOGRAFIA (5+ TAMANHOS) */
+:root {
+    --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    
+    /* Tamanhos de Fonte (mobile-first) */
+    --font-size-xs: 0.75rem;   /* 12px */
+    --font-size-sm: 0.875rem;  /* 14px */
+    --font-size-md: 1rem;      /* 16px (base) */
+    --font-size-lg: 1.25rem;   /* 20px */
+    --font-size-xl: 1.75rem;   /* 28px */
+    --font-size-xxl: 2.25rem;  /* 36px */
+
+    /* Pesos de Fonte */
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+}
+
+/* 4. RESET GLOBAL E ESTILOS BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-md);
+    line-height: 1.6;
+    color: var(--color-neutral-900);
+    background-color: var(--color-neutral-0);
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1 { font-size: var(--font-size-xl); }
+h2 { font-size: var(--font-size-lg); }
+h3 { font-size: var(--font-size-md); font-weight: var(--font-weight-bold); }
+
+/* Ajuste de tipografia para desktops */
+@media (min-width: 768px) {
+    h1 { font-size: var(--font-size-xxl); }
+    h2 { font-size: var(--font-size-xl); }
+    h3 { font-size: var(--font-size-lg); }
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--color-primary-dark);
+    text-decoration: underline;
+}

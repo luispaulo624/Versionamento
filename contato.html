@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato conosco para dúvidas, parcerias ou mais informações.">
+    <title>Contato | ONG Conectar & Transformar</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <header class="main-header">
+    <div class="container d-flex justify-content-between align-items-center">
+        
+        <a href="index.html" class="logo-link">
+            <h1>ONG Conectar & Transformar</h1>
+        </a>
+        
+        <button id="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="main-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        
+        <nav class="main-nav" role="navigation">
+            <ul id="main-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link" role="menuitem">Início</a></li>
+                <li role="none"><a href="sobre.html" class="nav-link" role="menuitem">Sobre Nós</a></li>
+                
+                <li class="nav-item-dropdown" role="none">
+                    <a href="projetos.html" class="nav-link" role="menuitem" aria-haspopup="true">
+                        Projetos ▾
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="none"><a href="projetos.html#lista-projetos" role="menuitem">Todos os Projetos</a></li>
+                        <li role="none"><a href="projetos.html#galeria-fotos" role="menuitem">Galeria de Fotos</a></li>
+                        <li role="none"><a href="#" role="menuitem">Projeto Educação</a></li>
+                        <li role="none"><a href="#" role="menuitem">Projeto Saúde</a></li>
+                    </ul>
+                </li>
+                <li role="none"><a href="voluntariado.html" class="nav-link" role="menuitem">Seja Voluntário</a></li>
+                <li role="none"><a href="doacoes.html" class="nav-link" role="menuitem">Doe</a></li>
+                <li role="none"><a href="transparencia.html" class="nav-link" role="menuitem">Transparência</a></li>
+                <li role="none"><a href="contato.html" class="nav-link" role="menuitem">Contato</a></li>
+                <li role="none"><a href="blog.html" class="nav-link" role="menuitem">Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <main>
+        <div class="container">
+            <div id="notification" class="notification"></div>
+
+            <section id="chamada-voluntariado" aria-labelledby="chamada-heading">
+                <h1 id="chamada-heading">Entre em contato conosco!</h1>
+            </section>
+            <section id="formulario-cadastro" aria-labelledby="form-heading">
+                <h2 id="form-heading">Formulário de Contato</h2>
+                <form action="#" method="post" id="form-voluntario">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        
+        <div class="form-group">
+            <label for="nome" class="form-label">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" class="form-control" required minlength="3">
+        </div>
+        
+        <div class="form-group">
+            <label for="email" class="form-label">E-mail:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        
+        </fieldset>
+    
+    <button type="submit" class="btn btn-primary">Enviar Cadastro</button>
+</form>
+            </section>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 ONG Conectar & Transformar. Todos os direitos reservados.</p>
+             <div class="footer-links">
+                <a href="login.html">Acesso do Administrador</a>
+            </div>
+            <form class="newsletter-form">
+                <label for="newsletter-email">Assine nossa newsletter:</label>
+                <input type="email" id="newsletter-email" name="newsletter_email" placeholder="Seu melhor e-mail" required>
+                <button type="submit">Inscrever</button>
+            </form>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
